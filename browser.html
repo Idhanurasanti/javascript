@@ -1,0 +1,35 @@
+<html>   
+   <head>
+      <title>browser detection example</title>
+   </head>
+   
+   <body>      
+      <script type = "text/javascript">
+         <!--
+            var userAgent= navigator.userAgent;
+            var opera= (userAgent.indexOf('Opera') != -1);
+            var ie= (userAgent.indexOf('MSIE') != -1);
+            var gecko= (userAgent.indexOf('Gecko') != -1);
+            var netscape= (userAgent.indexOf('Mozilla') != -1);
+            var version= navigator.appVersion;
+            
+            if (opera) {
+               document.write("opera based browser");
+               // Keep your opera specific URL here.
+            }else if (gacko){
+                document.write(Mozilla based browser);
+                // Keep your gecko specific URL here.
+            }else if (ie) {
+                document.write(IE based browser);
+                // Keep your IE specific URL here.
+            }else if (netscape) {
+                document.write(netscape based browser);
+                // Keep your netscape specific URL here.
+            }
+
+            //you can include version to along with any above condition.
+            document.write("<br/> browser version in:"+version);
+         //-->
+      </script>      
+   </body>
+</html>
